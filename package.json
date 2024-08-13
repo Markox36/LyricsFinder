@@ -1,0 +1,48 @@
+{
+  "name": "diskox",
+  "version": "0.0.1",
+  "description": "Discord bot in typescript with modern structure",
+  "main": "index.js",
+  "type": "commonjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "start": "node --no-deprecation ./dist/index.js",
+    "build": "npm install && tsc --build --verbose",
+    "dev": "tsx watch ./src/index.ts"
+  },
+  "keywords": [
+    "diskox",
+    "discord",
+    "ts",
+    "bot",
+    "typescript",
+    "modern",
+    "multifunctional"
+  ],
+  "author": "markox",
+  "license": "ISC",
+  "devDependencies": {
+    "@biomejs/biome": "^1.8.3",
+    "@types/node": "^20.14.15",
+    "@typescript-eslint/eslint-plugin": "^7.17.0",
+    "@typescript-eslint/parser": "^7.17.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-xo": "^0.45.0",
+    "eslint-config-xo-typescript": "^5.0.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-promise": "^6.6.0",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.3"
+  },
+  "dependencies": {
+    "axios": "^1.7.4",
+    "chalk": "^5.3.0",
+    "dotenv": "^16.4.5",
+    "ip-address": "^9.0.5",
+    "node-html-parser": "^6.1.13"
+  }
+}

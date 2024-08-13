@@ -5,7 +5,7 @@ interface LyricsFinderOptions {
 	ipv6_blocklist?: string[];
 }
 
-export class LyricsFinder {
+class LyricsFinder {
 	private readonly httpClient: HttpClient;
 
 	constructor({ ipv6_blocklist }: LyricsFinderOptions) {
@@ -25,3 +25,6 @@ export class LyricsFinder {
 		return root.querySelector(".lyrics")?.text ?? "No lyrics found";
 	}
 }
+
+export { LyricsFinder };
+export default LyricsFinder;

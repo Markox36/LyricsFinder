@@ -1,10 +1,10 @@
 {
-	"name": "lyricsfinder",
-	"version": "0.0.1",
+	"name": "lyrics-finder-ipv6",
+	"version": "0.1.0",
 	"description": "Simple lyrics finder npm package with ipv6 rotation.",
 	"main": "index.js",
 	"type": "commonjs",
-	"types": "dist/index.d.ts",
+	"types": "index.d.ts",
 	"scripts": {
 		"start": "node --no-deprecation ./dist/index.js",
 		"build": "npm install && tsc --build --verbose",
@@ -23,7 +23,7 @@
 		"type": "git",
 		"url": "git+https://github.com/Markox36/LyricsFinder.git"
 	},
-	"homepage": "https://github.com/tuusuario/tu-repositorio#readme",
+	"homepage": "https://github.com/Markox36/LyricsFinder#readme",
 	"author": "Markox",
 	"license": "ISC",
 	"devDependencies": {

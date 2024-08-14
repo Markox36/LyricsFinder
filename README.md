@@ -1,67 +1,67 @@
-# LyricsFinder
+# lyrics-finder-ipv6
 
-**LyricsFinder** es un paquete de npm para buscar letras de canciones con soporte para rotación de direcciones IPv6.
+**lyrics-finder-ipv6** is an npm package for searching song lyrics with support for IPv6 address rotation.
 
-## Instalación
+## Installation
 
-Puedes instalar **LyricsFinder** a través de npm utilizando el siguiente comando:
+You can install **lyrics-finder-ipv6** via npm using the following command:
 
 ```bash
-npm install lyricsfinder
+npm install lyrics-finder-ipv6
 ```
 
-## Uso
+## Usage
 
-Para utilizar **LyricsFinder**, primero debes importarlo y luego crear una instancia de `LyricsFinder`. A continuación, puedes usar el método `findLyrics` para buscar letras de canciones. Aquí tienes un ejemplo básico:
+To use **lyrics-finder-ipv6**, you first need to import it and then create an instance of `lyrics-finder-ipv6`. You can then use the `findLyrics` method to search for song lyrics. Here is a basic example:
 
-### Ejemplo sin ipv6 block
+### Example without IPv6 block
 
 ```typescript
-import { LyricsFinder } from 'lyricsfinder';
+import { LyricsFinder } from 'lyrics-finder-ipv6';
 
-// Crea una instancia de LyricsFinder con una lista de bloqueo de IPv6 vacía.
+// Create an instance of LyricsFinder with an empty IPv6 blocklist.
 const lyricsFinder = new LyricsFinder({ ipv6_blocklist: [] });
 
-// Busca letras para la canción especificada.
+// Search for lyrics for the specified song.
 lyricsFinder
   .findLyrics(\"Despacito - Luis Fonsi\")
   .then(console.log)
   .catch((err: unknown) => console.log(err));
 ```
 
-## Métodos
+## Methods
 
 ### `findLyrics(query: string): Promise<string>`
 
-- **query**: La consulta de búsqueda que especifica la canción y el artista.
-- **Returns**: Una promesa que se resuelve con la letra de la canción en formato de cadena.
+- **query**: The search query specifying the song and artist.
+- **Returns**: A promise that resolves with the song lyrics in string format.
 
-## Configuración
+## Configuration
 
-Puedes configurar el comportamiento del `LyricsFinder` pasando opciones al constructor. Actualmente, puedes especificar una lista de bloqueo de direcciones IPv6:
+You can configure the behavior of `lyrics-finder-ipv6` by passing options to the constructor. Currently, you can specify an IPv6 blocklist:
 
 ```typescript
-const lyricsFinder = new LyricsFinder({ ipv6_blocklist: ["::1"] });
+const lyricsFinder = new LyricsFinder({ ipv6_blocklist: [\"::1\"] });
 ```
 
-## Contribución
+## Contributing
 
-Si quieres contribuir a **LyricsFinder**, por favor, sigue estos pasos:
+If you want to contribute to **lyrics-finder-ipv6**, please follow these steps:
 
-1. Realiza un fork del repositorio.
-2. Crea una rama para tus cambios (`git checkout -b feature/nueva-funcionalidad`).
-3. Realiza tus cambios y haz commits (`git commit -am 'Añadir nueva funcionalidad'`).
-4. Envía tus cambios a tu repositorio (`git push origin feature/nueva-funcionalidad`).
-5. Crea una solicitud de extracción en GitHub.
+1. Fork the repository.
+2. Create a branch for your changes (`git checkout -b feature/new-feature`).
+3. Make your changes and commit (`git commit -am 'Add new feature'`).
+4. Push your changes to your repository (`git push origin feature/new-feature`).
+5. Create a pull request on GitHub.
 
-## Licencia
+## License
 
-Este proyecto está licenciado bajo la Licencia ISC - consulta el archivo [LICENSE](LICENSE) para más detalles.
+This project is licensed under the ISC License - see the [LICENSE](LICENSE) file for details.
 
-## Contacto
+## Contact
 
-Para más información, puedes contactar al autor en [hello@markox.dev](mailto:tu-email@example.com) o visitar el [repositorio de GitHub](https://github.com/Markox36/LyricsFinder).
+For more information, you can contact the author at [hello@markox.dev](mailto:hello@markox.dev) or visit the [GitHub repository](https://github.com/Markox36/LyricsFinder).
 
 ---
 
-¡Gracias por usar **LyricsFinder**! Si tienes alguna pregunta o necesitas ayuda, no dudes en abrir un problema en el repositorio de GitHub.
+Thank you for using **lyrics-finder-ipv6**! If you have any questions or need help, feel free to open an issue on the GitHub repository.

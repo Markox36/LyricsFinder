@@ -1,9 +1,6 @@
 import { parse } from "node-html-parser";
 import HttpClient from "./HttpClient";
-
-interface LyricsFinderOptions {
-	ipv6_blocklist?: string[];
-}
+import { type LyricsFinderOptions } from ".";
 
 class LyricsFinder {
 	private readonly httpClient: HttpClient;

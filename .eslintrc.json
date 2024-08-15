@@ -24,6 +24,8 @@
 			"extends": ["xo-typescript", "prettier"],
 			"files": ["*.ts", "*.tsx"],
 			"rules": {
+				"@typescript-eslint/no-unsafe-return": "off",
+				"@typescript-eslint/no-unsafe-call": "off",
 				"@typescript-eslint/no-unused-vars": "warn",
 				"@typescript-eslint/consistent-type-definitions": "off",
 				"@typescript-eslint/prefer-nullish-coalescing": "off",

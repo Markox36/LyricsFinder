@@ -1,10 +1,13 @@
 {
 	"name": "lyrics-finder-ipv6",
-	"version": "0.1.0",
+	"version": "1.0.0",
 	"description": "Simple lyrics finder npm package with ipv6 rotation.",
-	"main": "index.js",
+	"main": "./dist/LyricsFinder.js",
 	"type": "commonjs",
-	"types": "index.d.ts",
+	"types": "./dist/LyricsFinder.d.ts",
+	"files": [
+		"dist"
+	],
 	"scripts": {
 		"start": "node --no-deprecation ./dist/index.js",
 		"build": "npm install && tsc --build --verbose",
@@ -48,6 +51,7 @@
 		"chalk": "^5.3.0",
 		"dotenv": "^16.4.5",
 		"ip-address": "^9.0.5",
-		"node-html-parser": "^6.1.13"
+		"node-html-parser": "^6.1.13",
+		"puppeteer": "^23.1.0"
 	}
 }

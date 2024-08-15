@@ -150,7 +150,7 @@ class AxiosClient {
 
 			// eslint-disable-next-line @typescript-eslint/no-unsafe-call
 			const agent = new https.Agent({
-				localAddress: this.ip
+				localAddress: this.ip || "0.0.0.0"
 			});
 
 			config.httpAgent = agent;
